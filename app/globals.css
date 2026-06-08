@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  font-family: 'Inter', sans-serif;
+}
+
+@layer components {
+  /* Legacy gold classes (used in Hero/Header dark areas) */
+  .btn-gold {
+    @apply bg-gold text-black font-semibold px-8 py-3 rounded-none transition-all duration-300 hover:bg-gold-light hover:shadow-[0_0_20px_rgba(245,196,0,0.4)] uppercase tracking-widest text-sm;
+  }
+
+  .btn-outline-gold {
+    @apply border border-gold text-gold font-semibold px-8 py-3 rounded-none transition-all duration-300 hover:bg-gold hover:text-black uppercase tracking-widest text-sm;
+  }
+
+  /* Green classes (used in white body sections) */
+  .btn-green {
+    @apply bg-green text-white font-semibold px-8 py-3 rounded-none transition-all duration-300 hover:bg-green-dark hover:shadow-[0_0_20px_rgba(45,122,59,0.35)] uppercase tracking-widest text-sm;
+  }
+
+  .btn-outline-green {
+    @apply border border-green text-green font-semibold px-8 py-3 rounded-none transition-all duration-300 hover:bg-green hover:text-white uppercase tracking-widest text-sm;
+  }
+
+  .section-title {
+    @apply font-heading text-3xl md:text-4xl lg:text-5xl text-green mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-gray-500 text-lg mb-12 max-w-2xl mx-auto;
+  }
+
+  .gold-divider {
+    @apply w-16 h-0.5 bg-gold mx-auto mb-8;
+  }
+
+  .green-divider {
+    @apply w-16 h-0.5 bg-green mx-auto mb-8;
+  }
+
+  .card-dark {
+    @apply bg-card border border-gold/20 p-8 transition-all duration-300 hover:border-gold/60 hover:bg-card-hover;
+  }
+
+  .card-light {
+    @apply bg-card-light border border-green/20 p-8 transition-all duration-300 hover:border-green/50 hover:bg-card-light-hover;
+  }
+}

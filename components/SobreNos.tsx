@@ -7,8 +7,8 @@ export default function SobreNos() {
           <div className="relative">
             <div className="aspect-[4/3] overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800&q=80"
-                alt="Campo rural no Paraná"
+                src="/fazenda-sede.png"
+                alt="Fazenda no Paraná"
                 className="w-full h-full object-cover"
               />
             </div>

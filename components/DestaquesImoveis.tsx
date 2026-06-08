@@ -112,10 +112,6 @@ export default function DestaquesImoveis() {
                   </div>
                   <div className="p-6">
                     <h3 className="text-gray-800 font-heading text-lg mb-3 leading-snug">{imovel.titulo}</h3>
-                    <div className="flex justify-between text-sm text-gray-500 mb-4">
-                      <span>📍 {imovel.local}</span>
-                      <span>📐 {imovel.area}</span>
-                    </div>
                     <div className="flex items-center justify-between pt-4 border-t border-green/10">
                       <span className="text-green font-semibold">Consulte</span>
                       <a

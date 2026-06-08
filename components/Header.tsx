@@ -16,8 +16,6 @@ export default function Header() {
         alt="Agro Rural Imóveis"
         className="w-full h-auto block"
       />
-      
-      {/* Nav Sobreposta */}
       <nav className="absolute top-6 right-6 flex items-center gap-6 md:gap-8">
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (

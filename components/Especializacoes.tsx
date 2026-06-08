@@ -23,8 +23,8 @@ export default function Especializacoes() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {items.map((item) => (
             <div key={item.title} className="card-light group">
-              <span className="text-4xl mb-4 block">{item.icon}</span>
               <h3 className="text-green font-heading text-xl font-semibold mb-3">{item.title}</h3>
+              <div className="w-8 h-px bg-green/40 mb-4"></div>
               <p className="text-gray-600 leading-relaxed text-sm">{item.desc}</p>
             </div>
           ))}

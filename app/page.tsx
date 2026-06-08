@@ -1,3 +1,4 @@
+import Hero from '@/components/Hero'
 import Especializacoes from '@/components/Especializacoes'
 import PorQueEscolher from '@/components/PorQueEscolher'
 import ComoFunciona from '@/components/ComoFunciona'
@@ -9,6 +10,7 @@ import FAQ from '@/components/FAQ'
 export default function Home() {
   return (
     <>
+      <Hero />
       <Especializacoes />
       <PorQueEscolher />
       <ComoFunciona />

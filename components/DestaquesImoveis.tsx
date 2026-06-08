@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 const imoveis = [
   {
     id: 1,
@@ -35,7 +33,7 @@ const imoveis = [
 
 export default function DestaquesImoveis() {
   return (
-    <section className="py-24 px-6 bg-gray-50">
+    <section id="propriedades" className="py-24 px-6 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-green uppercase tracking-[0.3em] text-xs font-medium mb-4">Selecionados para você</p>
@@ -90,9 +88,9 @@ export default function DestaquesImoveis() {
         </div>
 
         <div className="text-center mt-12">
-          <Link href="/propriedades" className="btn-outline-green inline-block">
+          <a href="https://wa.me/5542988088285?text=Olá,%20gostaria%20de%20ver%20mais%20propriedades%20disponíveis." target="_blank" rel="noopener noreferrer" className="btn-outline-green inline-block">
             Ver Todas as Propriedades
-          </Link>
+          </a>
         </div>
       </div>
     </section>

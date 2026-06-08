@@ -9,7 +9,7 @@ const items = [
 
 export default function Especializacoes() {
   return (
-    <section className="py-24 px-6 bg-white">
+    <section id="servicos" className="py-24 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-green uppercase tracking-[0.3em] text-xs font-medium mb-4">O que fazemos</p>

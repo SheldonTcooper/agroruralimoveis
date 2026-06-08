@@ -28,7 +28,7 @@ export default function FAQ() {
   const [aberto, setAberto] = useState<number | null>(null)
 
   return (
-    <section className="py-24 px-6 bg-white">
+    <section id="contato" className="py-24 px-6 bg-white">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-green uppercase tracking-[0.3em] text-xs font-medium mb-4">Tire suas dúvidas</p>

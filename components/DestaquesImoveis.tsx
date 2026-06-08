@@ -6,7 +6,7 @@ const imoveis = [
     area: '120 alqueires',
     local: 'Guarapuava, PR',
     preco: 'Consulte',
-    img: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80',
+    img: '/fazenda-sede.png',
     destaque: 'Soja e milho',
   },
   {
@@ -16,7 +16,7 @@ const imoveis = [
     area: '5 alqueires',
     local: 'Ponta Grossa, PR',
     preco: 'Consulte',
-    img: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80',
+    img: '/chacara-piscina.png',
     destaque: 'Lazer e moradia',
   },
   {
@@ -26,7 +26,7 @@ const imoveis = [
     area: '10 alqueires',
     local: 'Cascavel, PR',
     preco: 'Consulte',
-    img: 'https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&q=80',
+    img: '/sitio-horta.png',
     destaque: 'Fruticultura',
   },
 ]

@@ -5,7 +5,7 @@ const imoveis = [
   {
     id: 1,
     tipo: 'Fazenda',
-    titulo: 'Fazenda Produtiva — Região de Guarapuava',
+    titulo: 'Fazenda Produtiva',
     area: '120 alqueires',
     local: 'Guarapuava, PR',
     img: '/fazenda-sede.png',
@@ -14,7 +14,7 @@ const imoveis = [
   {
     id: 2,
     tipo: 'Chácara',
-    titulo: 'Chácara com Casa — Região de Ponta Grossa',
+    titulo: 'Chácara com Casa',
     area: '5 alqueires',
     local: 'Ponta Grossa, PR',
     img: '/chacara-piscina.png',
@@ -23,7 +23,7 @@ const imoveis = [
   {
     id: 3,
     tipo: 'Sítio',
-    titulo: 'Sítio Familiar — Região de Cascavel',
+    titulo: 'Sítio Familiar',
     area: '8 alqueires',
     local: 'Cascavel, PR',
     img: '/sitio-horta.png',
@@ -32,7 +32,7 @@ const imoveis = [
   {
     id: 4,
     tipo: 'Fazenda',
-    titulo: 'Fazenda Estruturada — Região de Londrina',
+    titulo: 'Fazenda Estruturada',
     area: '200 alqueires',
     local: 'Londrina, PR',
     img: '/fazenda-silos.png',
@@ -41,7 +41,7 @@ const imoveis = [
   {
     id: 5,
     tipo: 'Haras',
-    titulo: 'Haras com Lago — Região de Maringá',
+    titulo: 'Haras com Lago',
     area: '30 alqueires',
     local: 'Maringá, PR',
     img: '/chacara-haras.png',
@@ -50,7 +50,7 @@ const imoveis = [
   {
     id: 6,
     tipo: 'Sítio',
-    titulo: 'Sítio à Beira do Lago — Região de Foz',
+    titulo: 'Sítio à Beira do Lago',
     area: '12 alqueires',
     local: 'Foz do Iguaçu, PR',
     img: '/sitio-lago.png',

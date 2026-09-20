@@ -1,7 +1,7 @@
 const items = [
-  { icon: '🌾', title: 'Fazendas', desc: 'Propriedades produtivas para agricultura e pecuária em todo o Paraná.' },
-  { icon: '🌿', title: 'Chácaras e Sítios', desc: 'Imóveis rurais para lazer, moradia e produção familiar.' },
-  { icon: '🏡', title: 'Casas Rurais', desc: 'Residências em zona rural com toda a tranquilidade do campo.' },
+  { imagem: '/indiamara-04.jpg', title: 'Fazendas', desc: 'Propriedades produtivas para agricultura e pecuária em todo o Paraná.' },
+  { imagem: '/indiamara-05.jpg', title: 'Chácaras e Sítios', desc: 'Imóveis rurais para lazer, moradia e produção familiar.' },
+  { imagem: '/indiamara-06.jpg', title: 'Casas Rurais', desc: 'Residências em zona rural com toda a tranquilidade do campo.' },
   { icon: '📋', title: 'Arrendamentos', desc: 'Intermediação de contratos de arrendamento rural com segurança jurídica.' },
   { icon: '🤝', title: 'Compra e Venda', desc: 'Assessoria completa em transações de imóveis rurais e urbanos.' },
   { icon: '📊', title: 'Avaliações', desc: 'Laudos e avaliações de imóveis rurais para financiamentos e partilhas.' },
@@ -22,7 +22,18 @@ export default function Especializacoes() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {items.map((item) => (
-            <div key={item.title} className="card-light group">
+            <div key={item.title} className="card-light group overflow-hidden">
+              {item.imagem ? (
+                <div className="w-full h-48 mb-4 overflow-hidden rounded">
+                  <img
+                    src={item.imagem}
+                    alt={item.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                  />
+                </div>
+              ) : (
+                <div className="text-4xl mb-4">{item.icon}</div>
+              )}
               <h3 className="text-green font-heading text-xl font-semibold mb-3">{item.title}</h3>
               <div className="w-8 h-px bg-green/40 mb-4"></div>
               <p className="text-gray-600 leading-relaxed text-sm">{item.desc}</p>

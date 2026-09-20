@@ -14,7 +14,7 @@ export default function Corretora() {
           {/* Foto */}
           <div className="md:w-72 flex-shrink-0">
             <img
-              src="/corretora.jpg"
+              src="/indiamara-sorridendo.png"
               alt="Indiamara S. Domingues"
               className="w-full h-full object-cover object-top"
               style={{ minHeight: '320px' }}
@@ -53,7 +53,7 @@ export default function Corretora() {
                 Falar com a Indiamara
               </a>
               <a
-                href="mailto:contato@agroruralimoveis.com"
+                href="mailto:agroruralimoveisss@gmail.com"
                 className="btn-outline-green text-center"
               >
                 Enviar E-mail

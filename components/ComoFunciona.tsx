@@ -3,16 +3,19 @@ const passos = [
     numero: '01',
     titulo: 'Entre em Contato',
     desc: 'Fale conosco pelo WhatsApp ou formulário. Conte o que busca ou o que quer vender. Sem compromisso.',
+    imagem: '/indiamara-01.jpg'
   },
   {
     numero: '02',
     titulo: 'Consultoria Especializada',
     desc: 'Nossa equipe apresenta as melhores opções para o seu perfil, com análise de documentação e localização.',
+    imagem: '/indiamara-02.jpg'
   },
   {
     numero: '03',
     titulo: 'Negócio Fechado',
     desc: 'Acompanhamos todo o processo até a assinatura do contrato. Segurança jurídica do início ao fim.',
+    imagem: '/indiamara-03.jpg'
   },
 ]
 
@@ -31,10 +34,14 @@ export default function ComoFunciona() {
 
           {passos.map((passo, i) => (
             <div key={passo.numero} className="relative z-10 text-center px-8 py-10">
-              <div className="w-24 h-24 border border-green/40 mx-auto flex items-center justify-center mb-6 relative">
-                <span className="font-heading text-4xl text-green font-bold">{passo.numero}</span>
+              <div className="w-40 h-40 mx-auto mb-6 relative overflow-hidden rounded-lg">
+                <img
+                  src={passo.imagem}
+                  alt={passo.titulo}
+                  className="w-full h-full object-cover"
+                />
                 {i < passos.length - 1 && (
-                  <div className="hidden md:block absolute -right-8 top-1/2 -translate-y-1/2 text-green/40 text-2xl">→</div>
+                  <div className="hidden md:block absolute -right-20 top-1/2 -translate-y-1/2 text-green/40 text-2xl">→</div>
                 )}
               </div>
               <h3 className="text-gray-800 font-heading text-xl font-semibold mb-3">{passo.titulo}</h3>

@@ -1,5 +1,7 @@
 'use client'
 import Link from 'next/link'
+import Image from 'next/image'
+// Atualizado com fotos de Indiamara S. Domingues
 
 export default function Header() {
   const navLinks = [
@@ -11,9 +13,15 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 w-full bg-black/80 backdrop-blur-sm">
-      <nav className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
-        <Link href="/" className="text-white font-bold text-lg tracking-wide drop-shadow-lg">
-          Agro Rural Imóveis
+      <nav className="flex items-center justify-between px-6 py-3 max-w-7xl mx-auto">
+        <Link href="/" className="flex items-center gap-2">
+          <Image
+            src="/logo-novo.png"
+            alt="Agro Rural Imóveis"
+            width={50}
+            height={50}
+            className="h-auto w-auto max-h-14"
+          />
         </Link>
         <div className="flex items-center gap-6 md:gap-8">
           <div className="hidden md:flex items-center gap-8">

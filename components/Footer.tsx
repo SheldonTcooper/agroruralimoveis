@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
           {/* Logo + desc */}
           <div className="md:col-span-2">
-            <Image src="/logo.png" alt="Agro Rural Imóveis" width={180} height={70} className="h-14 w-auto mb-4" unoptimized />
+            <Image src="/logo-novo.png" alt="Agro Rural Imóveis" width={180} height={70} className="h-14 w-auto mb-4" unoptimized />
             <p className="text-gray-500 text-sm leading-relaxed max-w-sm">
               Especialistas em imóveis rurais no Paraná. Fazendas, chácaras, sítios e propriedades rurais para compra, venda e arrendamento.
             </p>

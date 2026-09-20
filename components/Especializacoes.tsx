@@ -1,7 +1,7 @@
 const items = [
-  { imagem: '/indiamara-04.jpg', title: 'Fazendas', desc: 'Propriedades produtivas para agricultura e pecuária em todo o Paraná.' },
-  { imagem: '/indiamara-05.jpg', title: 'Chácaras e Sítios', desc: 'Imóveis rurais para lazer, moradia e produção familiar.' },
-  { imagem: '/indiamara-06.jpg', title: 'Casas Rurais', desc: 'Residências em zona rural com toda a tranquilidade do campo.' },
+  { imagem: '/indiamara-fazendas.jpg', title: 'Fazendas', desc: 'Propriedades produtivas para agricultura e pecuária em todo o Paraná.' },
+  { imagem: '/indiamara-chacaras.jpg', title: 'Chácaras e Sítios', desc: 'Imóveis rurais para lazer, moradia e produção familiar.' },
+  { imagem: '/indiamara-casas.jpg', title: 'Casas Rurais', desc: 'Residências em zona rural com toda a tranquilidade do campo.' },
   { icon: '📋', title: 'Arrendamentos', desc: 'Intermediação de contratos de arrendamento rural com segurança jurídica.' },
   { icon: '🤝', title: 'Compra e Venda', desc: 'Assessoria completa em transações de imóveis rurais e urbanos.' },
   { icon: '📊', title: 'Avaliações', desc: 'Laudos e avaliações de imóveis rurais para financiamentos e partilhas.' },
@@ -24,11 +24,11 @@ export default function Especializacoes() {
           {items.map((item) => (
             <div key={item.title} className="card-light group overflow-hidden">
               {item.imagem ? (
-                <div className="w-full h-48 mb-4 overflow-hidden rounded">
+                <div className="w-full h-96 mb-4 overflow-hidden rounded bg-gray-100 flex items-center justify-center">
                   <img
                     src={item.imagem}
                     alt={item.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform"
                   />
                 </div>
               ) : (
